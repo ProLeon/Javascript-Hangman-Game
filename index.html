@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    <header>Hangman Game</header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mainContentBox">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="tBox">
+                                <h1>Pixel Art</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="guessedBox">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="guessed">
+                                            Incorrect Letters Guessed:
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="gRemaining">
+                                            Guesses Remaining:
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="imgBox">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="img">
+                                            <img id="myimg" src="assets/images/template.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="wins">
+                                            Wins: 0
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="tBox">
+                                <h1 id="wordToGuess">Press any key to start</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <audio id="losesound" src="assets/sound/losesound.mp3"></audio>
+    <audio id="winsound" src="assets/sound/winsound.mp3"></audio>
+
+
+    </div>
+    <script type="text/javascript" src="logic.js"></script>
+
+
+</body>
+
+</html>
